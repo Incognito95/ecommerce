@@ -76,5 +76,5 @@ As you can see above the first block of code renders the form, and then the foll
 
 #### After the data is inserted into the form then it will turn out to look like this in the admin panel:
 ```
-![./images/admin.png];
+![../ecommerce/images/admin.png];
 ```
