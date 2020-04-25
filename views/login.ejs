@@ -1,0 +1,21 @@
+<%- include('./partials/header') %>
+
+<div class="container">
+        <form class="form-signin" action="/login" method="post">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+                <span style="color: red;"><%= typeof messages !== "undefined" && typeof messages.error !== "undefined" ? messages.error : "" %></span>
+            </div>
+
+            <div class="form-label-group">
+                <label for="inputEmail">Username</label>
+                <input type="text" id="inputEmail" class="form-control" name="username">
+            </div>
+
+            <div class="form-label-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" id="inputPassword" name="password" class="form-control">
+            </div>
+            <button class="btn btn-lg btn-primary btn-login" type="submit">Login</button>
+        </form>
+</div>

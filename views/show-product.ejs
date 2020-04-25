@@ -1,0 +1,20 @@
+<%- include ./partials/header %>
+
+<section id="product" class="product">
+    <div class="container">
+        <div class="row flex-container">
+            <div class="col-lg-6 col-md-12">
+                <div class="product-image">
+                    <img class="sneakers img-fluid" src="<%= result.image %>">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="product-description">
+                    <h2 class="product-title"><%= result.name %></h2>
+
+                    <h6 class="product-price"><%= result.price %></h6>
+                    <p class="product-description"><%= result.description %></p>
+                </div>
+            </div>
+        </div>
+</section>

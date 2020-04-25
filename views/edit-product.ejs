@@ -1,0 +1,23 @@
+<%- include ./partials/admin %>
+
+<div class="container">
+    <form method="post">
+        <fieldset>
+            <label for="">Name</label>
+            <input type="text" name="name" class="form-control" value="<%= result.name %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Description</label>
+            <textarea name="description" id="" class="form-control" rows="10"><%= result.description %></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="">Price</label>
+            <input type="text" name="price" class="form-control" value="<%= result.price %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Image</label>
+            <input type="text" name="image" class="form-control" value="<%= result.image %>">
+        </fieldset>
+        <button type="submit" class="btn btn-primary save-btn">Save</button>
+    </form>
+</div>

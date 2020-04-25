@@ -1,0 +1,21 @@
+<%- include ./partials/admin %>
+
+<div class="container">
+    <h3>Products</h3>
+    <a href="/create-product" class="btn btn-success">Create Product</a>
+    <div class="alert alert-success" role="alert"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></div>
+    <% results.forEach(result => { %>
+    <div class="card">
+        <div class="card-body">
+            <strong>Name:</strong>
+            <br><%= result.name %>
+            <br><br><strong>Description:</strong>
+            <br><%= result.description %>
+            <br><br><strong>Price:</strong> <%= result.price %>
+            <br><br><strong>Image:</strong><br><img src="<%= result.image %>" width="230">
+            <br><br><a href="/edit-product/<%= result.id %>" class="btn btn-info">Edit</a>
+            <a href="/delete-product/<%= result.id %>" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+    <% }) %>
+</div>
