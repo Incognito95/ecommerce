@@ -75,6 +75,8 @@ exports.deleteProduct = function (req, res) {
 As you can see above the first block of code renders the form, and then the following crud functionalities happen below by using the HTTP methods `GET` and `POST`.
 
 #### After the data is inserted into the form then it will turn out to look like this in the admin panel:
-```
-![./images/admin.png];
-```
+
+![admin](/public/images/admin.png)
+
+#### Out in the products page it will look like this:
+![admin](/public/images/products.png)
